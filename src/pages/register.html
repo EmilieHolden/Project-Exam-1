@@ -14,12 +14,22 @@
   </head>
   <body>
     <header>
-      <nav>
-        <a href="index.html"
+      <nav class="main-navigation">
+        <a href="index.html" class="logo"
           ><img src="src/images/arden-logo.png" alt="Arden logo"
         /></a>
-        <a href="cart.html">Cart</a>
-        <a href="/src/pages/login.html">Login</a>
+        <ul>
+          <li>
+            <a href="./src/pages/login.html" aria-label="Log in"
+              ><i class="fa-sharp fa-thin fa-user"></i
+            ></a>
+          </li>
+          <li>
+            <a href="./src/pages/cart.html" aria-label="Shopping cart"
+              ><i class="fa-sharp fa-thin fa-bag-shopping"></i
+            ></a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -35,6 +45,17 @@
       </form>
       <p id="register-message"></p>
     </main>
-    <footer></footer>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./src/pages/register.html">Register account</a></li>
+          <li><a href="./src/pages/login.html">Log in</a></li>
+          <li><a href="./src/pages/cart.html">Shopping cart</a></li>
+        </ul>
+      </nav>
+      <i class="fa-brands fa-square-facebook"></i>
+      <i class="fa-brands fa-square-instagram"></i>
+    </footer>
   </body>
 </html>

@@ -19,6 +19,7 @@ body {
   background: var(--color-primary);
   font-family: var(--font-default);
   font-size: var(--fontsize-17);
+  color: var(--color-primary-dark);
 
   @media (min-width: 768px) {
     font-size: var(--fontsize-18);
@@ -28,6 +29,8 @@ body {
 main {
   max-width: 1000px;
   margin: 0 auto;
+  padding: var(--spacing-16);
+  height: 100vh;
 }
 
 button,
@@ -57,7 +60,6 @@ h1,
 .h2-new-collection {
   font-family: var(--font-headings);
   font-weight: var(--fontweight-normal);
-  color: var(--color-primary-dark);
   font-size: var(--fontsize-20);
 
   @media (min-width: 768px) {
@@ -68,7 +70,6 @@ h1,
 h2,
 p {
   font-weight: var(--fontweight-thin);
-  color: var(--color-primary-dark);
 }
 
 h2 {
@@ -125,6 +126,24 @@ input:focus,
 textarea:focus {
   background: var(--color-secondary);
   border: 0.5px solid var(--color-primary-dark);
+}
+
+/* Header */
+.main-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-24);
+  border-bottom: solid 0.5px var(--color-gray);
+}
+.main-navigation ul {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-16);
+}
+
+.logo {
+  max-width: 100px;
 }
 
 /* Footer */
