@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <base href="/" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/9cf112f2f4.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="/src/js/script.js" defer></script>
+    <link rel="stylesheet" href="/src/css/global.css" />
+    <title>Ardên Online Shop</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img src="src/images/arden-logo.png" alt="Arden logo"
+        /></a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Login</h1>
+      <form id="login-form">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" min="8" required />
+        <button type="submit">Login</button>
+      </form>
+      <p id="login-message"></p>
+      <a href="/src/pages/register.html">Register account</a>
+      <button id="logout-btn">Log out</button>
+    </main>
+    <footer></footer>
+  </body>
+</html>
