@@ -1,0 +1,137 @@
+@import "./product-carousel.css";
+@import "./thumbnail-grid.css";
+@import "./product.css";
+@import "./variables.css";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  background: var(--color-primary);
+  font-family: var(--font-default);
+  font-size: var(--fontsize-17);
+
+  @media (min-width: 768px) {
+    font-size: var(--fontsize-18);
+  }
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+button,
+label,
+input,
+select {
+  font: inherit;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Typography */
+h1,
+.h2-new-collection {
+  font-family: var(--font-headings);
+  font-weight: var(--fontweight-normal);
+  color: var(--color-primary-dark);
+  font-size: var(--fontsize-20);
+
+  @media (min-width: 768px) {
+    font-size: var(--fontsize-35);
+  }
+}
+
+h2,
+p {
+  font-weight: var(--fontweight-thin);
+  color: var(--color-primary-dark);
+}
+
+h2 {
+  font-size: var(--fontsize-17);
+}
+
+/* Buttons */
+button {
+  padding: var(--spacing-4) var(--spacing-8);
+  border: solid 0.5px transparent;
+  background-color: var(--color-primary-dark);
+  color: var(--color-secondary);
+  cursor: pointer;
+  font-weight: var(--fontweight-thin);
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  background: var(--color-primary);
+  border: solid 0.5px var(--color-dark-gray);
+  color: var(--color-primary-dark);
+}
+
+/* Secondary button */
+.btn-secondary {
+  background: var(--color-primary);
+  border: solid 0.5px var(--color-dark-gray);
+  color: var(--color-primary-dark);
+}
+
+.btn-secondary:hover {
+  border: solid 0.5px transparent;
+  background-color: var(--color-primary-dark);
+  color: var(--color-secondary);
+}
+
+/* Form Styling */
+input,
+textarea,
+select {
+  width: 100%;
+  padding: var(--spacing-8) var(--spacing-4);
+  color: var(--color-primary-dark);
+  border: 0.5px solid var(--color-gray);
+  margin-bottom: var(--spacing-8);
+}
+
+input:hover {
+  background: var(--color-secondary);
+  border: 0.5px solid var(--color-gray);
+}
+
+input:focus,
+textarea:focus {
+  background: var(--color-secondary);
+  border: 0.5px solid var(--color-primary-dark);
+}
+
+/* Footer */
+footer {
+  text-align: left;
+  padding: var(--spacing-24);
+  margin-top: var(--spacing-32);
+  background: var(--color-primary);
+  border-top: 0.5px solid var(--color-gray);
+}

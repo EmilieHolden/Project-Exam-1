@@ -1,0 +1,31 @@
+:root {
+  /* Colors */
+  --color-primary: #fff;
+  --color-primary-dark: #1c1c1c;
+  --color-secondary: #f7f7f7;
+  --color-gray: #777;
+  --color-dark-gray: #3f3f3f;
+  --color-red: #d63838;
+
+  /* Font family */
+  --font-default: "Source Sans 3", sans-serif;
+  --font-headings: "Elms Sans", sans-serif;
+
+  /* Font sizes */
+  --fontsize-15: 15px;
+  --fontsize-17: 17px;
+  --fontsize-20: 20px;
+  --fontsize-35: 35px;
+
+  /* Font weight */
+  --fontweight-thin: 300;
+  --fontweight-normal: 400;
+
+  /* Spacing scale */
+  --spacing-4: 4px;
+  --spacing-8: 8px;
+  --spacing-16: 16px;
+  --spacing-20: 20px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+}
