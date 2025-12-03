@@ -1,0 +1,15 @@
+.success-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: var(--spacing-16);
+
+  @media (min-width: 768px) {
+    gap: var(--spacing-32);
+  }
+}
+
+.back-to-home-btn {
+  width: fit-content;
+  align-self: center;
+}
