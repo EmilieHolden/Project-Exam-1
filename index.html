@@ -15,6 +15,7 @@
       crossorigin="anonymous"
     ></script>
     <script type="module" src="/src/js/script.js" defer></script>
+
     <link rel="stylesheet" href="src/css/global.css" />
     <title>Ardên Online Shop</title>
   </head>
@@ -32,39 +33,36 @@
           </li>
           <li>
             <a href="./src/pages/cart.html" aria-label="Shopping cart"
-          ><i class="fa-sharp fa-thin fa-bag-shopping"></i
-        ></a>
+              ><i class="fa-sharp fa-thin fa-bag-shopping"></i
+            ></a>
           </li>
         </ul>
       </nav>
     </header>
+    <section class="hero-section">
+      <hgroup>
+        <h1>Discover Everything You Love, all in One Place</h1>
+        <p>Shop gadgets, home decor, gifts, and more.</p>
+      </hgroup>
+      <button class="btn-secondary">
+        <a href="#latest-arrivals-section">Shop now</a>
+      </button>
+    </section>
     <main>
-      <section>
-        <h1>Latest arrivals</h1>
-        <ul class="carousel">
-          <li>
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae,
-              molestiae.
-            </p>
-          </li>
-          <li>
-            <h2>hei</h2>
-            <p>hallo dette er en karusell</p>
-          </li>
-          <li>
-            <h2>hei</h2>
-            <p>hallo dette er en karusell</p>
-          </li>
-        </ul>
-        <i class="fa-sharp fa-thin fa-angle-left"></i>
-        <div></div>
-        <i class="fa-sharp fa-thin fa-angle-right"></i>
-        <button class="btn-secondary">View Product</button>
+      <section id="latest-arrivals-section">
+        <h2 class="h2-large">Latest arrivals</h2>
+        <div class="carousel">
+          <button class="carousel__btn carousel__btn--left">
+            <i class="fa-sharp fa-thin fa-angle-left"></i>
+          </button>
+          <div class="carousel__content"></div>
+          <button class="carousel__btn carousel__btn--right">
+            <i class="fa-sharp fa-thin fa-angle-right"></i>
+          </button>
+        </div>
       </section>
       <section>
-        <h2 class="h2-new-collection">New collection</h2>
+        <h2 class="h2-large">New collection</h2>
         <div class="thumbnail-grid" id="container"></div>
       </section>
     </main>
