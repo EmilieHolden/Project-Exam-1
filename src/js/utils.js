@@ -24,3 +24,25 @@ export function getPath(file) {
     }
 }
 
+export function validateForm(form) {
+    let valid = true;
+
+    // Remove old errors
+    form.querySelectorAll(".input-error").forEach(el => el.classList.remove("input-error"));
+    form.querySelectorAll(".error-text").forEach(el => el.remove());
+
+    // Validate each field
+    form.querySelectorAll("input, textarea, select").forEach(input => {
+        if (!input.checkValidity()) {
+            valid = false;
+            input.classList.add("input-error");
+
+            const errorMessage = document.createElement("p");
+            errorMessage.classList.add("error-text");
+            errorMessage.textContent = input.validationMessage;
+            input.insertAdjacentElement("beforebegin", errorMessage);
+        }
+    });
+
+    return valid;
+}
