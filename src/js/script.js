@@ -1,14 +1,19 @@
 import { getProducts } from "/src/js/api/products.js";
 import { getPath } from "/src/js/utils.js";
-import "/src/js/auth.js";
+import "/src/js/register.js";
+import "/src/js/login.js";
 import "/src/js/product.js";
+import "/src/js/product-carousel.js"
+import "/src/js/checkout.js"
 
-const container = document.querySelector("#container")
 
-let loading = false
 
 export async function fetchAndCreateProducts() {
+    const container = document.querySelector("#container")
     if (!container) return
+
+    let loading = false
+
 
     try {
         loading = true
