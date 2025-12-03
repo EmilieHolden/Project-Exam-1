@@ -2,11 +2,19 @@
 @import "./allProducts.css";
 @import "./product.css";
 @import "./variables.css";
+@import "./hero.css";
+@import "./success.css";
+@import "./cart.css";
+@import "./checkout.css";
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -30,12 +38,13 @@ main {
   max-width: 1000px;
   margin: 0 auto;
   padding: var(--spacing-16);
-  height: 100vh;
+  min-height: 100vh;
 }
 
 button,
 label,
 input,
+a,
 select {
   font: inherit;
 }
@@ -55,9 +64,17 @@ a {
   color: inherit;
 }
 
+.link {
+  font-family: var(--font-default);
+  font-weight: var(--fontweight-thin);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 0.5px;
+}
+
 /* Typography */
 h1,
-.h2-new-collection {
+.h2-large {
   font-family: var(--font-headings);
   font-weight: var(--fontweight-normal);
   font-size: var(--fontsize-20);
@@ -68,7 +85,8 @@ h1,
 }
 
 h2,
-p {
+p,
+label {
   font-weight: var(--fontweight-thin);
 }
 
@@ -78,16 +96,19 @@ h2 {
 
 /* Buttons */
 button {
-  padding: var(--spacing-4) var(--spacing-8);
-  border: solid 0.5px transparent;
-  background-color: var(--color-primary-dark);
-  color: var(--color-secondary);
   cursor: pointer;
   font-weight: var(--fontweight-thin);
   transition: all 0.3s ease-in-out;
 }
 
-button:hover {
+.btn-main {
+  padding: var(--spacing-4) var(--spacing-8);
+  border: solid 0.5px transparent;
+  background-color: var(--color-primary-dark);
+  color: var(--color-secondary);
+}
+
+.btn-main:hover {
   background: var(--color-primary);
   border: solid 0.5px var(--color-dark-gray);
   color: var(--color-primary-dark);
@@ -95,6 +116,7 @@ button:hover {
 
 /* Secondary button */
 .btn-secondary {
+  padding: var(--spacing-4) var(--spacing-8);
   background: var(--color-primary);
   border: solid 0.5px var(--color-dark-gray);
   color: var(--color-primary-dark);
@@ -104,6 +126,12 @@ button:hover {
   border: solid 0.5px transparent;
   background-color: var(--color-primary-dark);
   color: var(--color-secondary);
+}
+
+.btn-main:disabled {
+  opacity: 50%;
+  pointer-events: none;
+  cursor: not-allowed;
 }
 
 /* Form Styling */
@@ -126,6 +154,10 @@ input:focus,
 textarea:focus {
   background: var(--color-secondary);
   border: 0.5px solid var(--color-primary-dark);
+}
+
+.input-error {
+  border: 1px solid var(--color-red);
 }
 
 /* Header */
@@ -153,4 +185,10 @@ footer {
   margin-top: var(--spacing-32);
   background: var(--color-primary);
   border-top: 0.5px solid var(--color-gray);
+}
+
+/* Error */
+
+.error-text {
+  color: var(--color-red);
 }
