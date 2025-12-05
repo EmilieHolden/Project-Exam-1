@@ -84,7 +84,7 @@ function renderCart(container, totalContainer) {
         <p>Total: $${total.toFixed(2)}</p><button class="btn-secondary clear-cart-btn">Clear Cart<i class="fa-sharp fa-thin fa-trash-can"></i></button>
       </div>
       <div class="checkout-continue">
-      ${paymentDetailsCart ? '' : `<a href="${getPath("src/pages/checkout.html")}" class="btn-main checkout-btn">Checkout</a><a href="./" class="link">Continue shopping</a>`}
+      ${paymentDetailsCart ? '' : `<a href="${getPath("./checkout.html")}" class="btn-main checkout-btn">Checkout</a><a href="${getPath("../../index.html")}" class="link">Continue shopping</a>`}
         
       </div>`
 

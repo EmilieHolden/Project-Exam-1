@@ -7,6 +7,6 @@ if (checkoutForm) {
         event.preventDefault()
         if (!validateForm(checkoutForm)) return;
 
-        window.location.href = "src/pages/success.html";
+        window.location.href = "./success.html";
     })
 }
