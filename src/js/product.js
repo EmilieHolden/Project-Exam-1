@@ -1,5 +1,5 @@
-import { getProduct } from "/src/js/api/products.js";
-import { cartArray, updateCart } from "/src/js/cart.js";
+import { getProduct } from "./api/products.js";
+import { cartArray, updateCart } from "./cart.js";
 
 const params = new URLSearchParams(window.location.search);
 const shareLink = window.location.href

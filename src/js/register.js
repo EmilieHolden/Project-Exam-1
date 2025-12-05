@@ -1,6 +1,6 @@
-import { registerUser } from "/src/js/api/register.js";
-import { loginUser } from "/src/js/api/login.js";
-import { validateForm } from "/src/js/utils.js";
+import { registerUser } from "./api/register.js";
+import { loginUser } from "./api/login.js";
+import { validateForm } from "./utils.js";
 
 // REGISTER
 const registerForm = document.getElementById("register-form");
@@ -36,7 +36,7 @@ if (registerForm) {
             registerMessage.textContent = "Registration successful, you are now logged in to your new account";
 
             setTimeout(() => {
-                window.location.href = "/";
+                window.location.href = "../../index.html";
             }, 1000);
         } catch (error) {
             registerMessage.textContent = `Registration failed. ${error.message}`;

@@ -1,5 +1,5 @@
-import { validateForm } from "/src/js/utils.js";
-import { loginUser } from "/src/js/api/login.js";
+import { validateForm } from "./utils.js";
+import { loginUser } from "./api/login.js";
 
 const loginMainContainer = document.getElementById("login-main-container");
 
@@ -45,7 +45,7 @@ function renderLoggedOutView() {
 
                 setTimeout(() => {
                     renderLoggedInView();
-                    window.location.href = "/";
+                    window.location.href = "../../index.html";
                 }, 1000);
             } catch (error) {
                 loginMessage.textContent = `Login failed. ${error.message}`;

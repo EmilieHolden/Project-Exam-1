@@ -1,4 +1,4 @@
-import { validateForm } from "/src/js/utils.js";
+import { validateForm } from "./utils.js";
 
 const checkoutForm = document.getElementById("checkout-form")
 
