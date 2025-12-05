@@ -52,8 +52,10 @@ function renderCarousel(products) {
         div.classList.add("carousel__item");
 
         div.innerHTML = `
-      <div class="carousel-product-image-container"><img src="${product.image.url}" alt="${product.image.alt}"></div>
-      <h2>${product.title}</h3>
+      <div class="carousel-product-image-container">
+      <img src="${product.image.url}" alt="${product.image.alt}">
+      </div>
+      <h2>${product.title}</h2>
       <button class="btn-secondary view-product-btn" data-id="${product.id}">View product</button>
     `;
 
