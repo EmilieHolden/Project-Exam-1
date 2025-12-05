@@ -1,10 +1,10 @@
-import { getProducts } from "/src/js/api/products.js";
-import { getPath } from "/src/js/utils.js";
-import "/src/js/register.js";
-import "/src/js/login.js";
-import "/src/js/product.js";
-import "/src/js/product-carousel.js"
-import "/src/js/checkout.js"
+import { getProducts } from "./api/products.js";
+import { getPath } from "./utils.js";
+import "./register.js";
+import "./login.js";
+import "./product.js";
+import "./product-carousel.js"
+import "./checkout.js"
 
 
 
