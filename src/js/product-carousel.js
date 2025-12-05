@@ -1,5 +1,4 @@
 import { getProducts } from "./api/products.js";
-import { getPath } from "./utils.js";
 
 /*
 Inspired and adapted from existing code, with adjustments to fit my project.
@@ -110,7 +109,7 @@ function renderCarousel(products) {
     viewButtons.forEach(btn => {
         btn.addEventListener("click", () => {
             const id = btn.dataset.id;
-            window.location.href = getPath(`product.html?id=${id}`);
+            window.location.href = `src/pages/product.html?id=${id}`;
         });
     });
 

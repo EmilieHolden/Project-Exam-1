@@ -1,5 +1,4 @@
 import { getProducts } from "./api/products.js";
-import { getPath } from "./utils.js";
 import "./register.js";
 import "./login.js";
 import "./product.js";
@@ -39,7 +38,7 @@ export async function fetchAndCreateProducts() {
             title.className = 'card-title'
             viewProductButton.className = 'btn-secondary'
 
-            card.href = getPath(`product.html?id=${product.id}`);
+            card.href = `src/pages/product.html?id=${product.id}`;
             image.src = product.image.url
             image.alt = product.image.alt
             title.textContent = product.title

@@ -16,14 +16,6 @@ export function groupById(cartArray) {
     return grouped;
 }
 
-export function getPath(file) {
-    if (window.location.pathname.includes("/src/")) {
-        return `./${file}`
-    } else {
-        return `src/pages/${file}`
-    }
-}
-
 export function validateForm(form) {
     let valid = true;
 
