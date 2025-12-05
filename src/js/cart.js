@@ -34,14 +34,14 @@ function renderCart(container, totalContainer) {
             <p>$${item.discountedPrice ?? item.price}</p>
           </div>
           <div class="qty-btns">
-          <button class="remove-btn add-remove-btn btn-secondary" data-id="${item.id}">
+          <button class="remove-btn add-remove-btn btn-secondary" data-id="${item.id}" aria-label="Reduce item">
             <i class="fa-sharp fa-thin fa-minus"></i>
           </button>
           <p class="item-number">${item.quantity}</p>
-          <button class="increase-btn add-remove-btn btn-secondary" data-id="${item.id}">
+          <button class="increase-btn add-remove-btn btn-secondary" data-id="${item.id}" aria-label="Add item">
             <i class="fa-sharp fa-thin fa-plus"></i>
           </button>
-          <button class="remove-all-btn add-remove-btn btn-secondary" data-id="${item.id}">
+          <button class="remove-all-btn add-remove-btn btn-secondary" data-id="${item.id}" aria-label="Remove item">
             <i class="fa-sharp fa-thin fa-trash-can"></i>
           </button>
           </div>
