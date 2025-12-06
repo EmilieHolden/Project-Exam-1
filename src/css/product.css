@@ -70,6 +70,7 @@
 .customer-review-container {
   padding: var(--spacing-8);
   border: solid 0.5px var(--color-dark-gray);
+  margin-bottom: var(--spacing-8);
 }
 
 .tags-container {
