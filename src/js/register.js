@@ -23,6 +23,7 @@ if (registerForm) {
         try {
             loading = true
             registerMessage.textContent = `Registrating account...`
+            registerMessage.classList.remove("error-text", "success-text")
 
             await registerUser(userData);
             const loginResult = await loginUser({
@@ -34,6 +35,7 @@ if (registerForm) {
             localStorage.setItem("user", JSON.stringify(loginResult.data));
 
             registerMessage.textContent = "Registration successful, you are now logged in to your new account";
+            registerMessage.classList.add("success-text");
 
             setTimeout(() => {
                 window.location.href = "../../index.html";

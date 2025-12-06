@@ -187,7 +187,11 @@ footer {
   border-top: 0.5px solid var(--color-gray);
 }
 
-/* Error */
+/* Error and success */
+
+.success-text {
+  color: var(--color-primary-dark);
+}
 
 .error-text {
   color: var(--color-red);
