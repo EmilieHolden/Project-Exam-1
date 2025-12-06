@@ -19,3 +19,7 @@
   font-size: var(--fontsize-20);
   font-weight: var(--fontweight-normal);
 }
+
+.btn-secondary.btn-hero-section {
+  padding: var(--spacing-8) var(--spacing-16);
+}
