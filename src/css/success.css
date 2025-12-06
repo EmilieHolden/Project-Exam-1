@@ -9,7 +9,8 @@
   }
 }
 
-.back-to-home-btn {
+.btn-secondary.back-to-home-btn {
   width: fit-content;
   align-self: center;
+  padding: var(--spacing-8) var(--spacing-16);
 }
