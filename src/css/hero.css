@@ -1,6 +1,6 @@
 .hero-section {
   height: 600px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background-image: linear-gradient(rgb(0, 0, 0, 30%), rgb(0, 0, 0, 30%)),
     url("../images/pexels-cottonbro-9154883.jpg");
   background-size: cover;
   background-position: center;
