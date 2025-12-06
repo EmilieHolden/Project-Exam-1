@@ -50,7 +50,7 @@ function renderProduct(product) {
           </p>
           <div class="product-actions-container">
             <button class="btn-main" id="add-to-cart-btn">Add to cart</button>
-             <button class="btn-secondary" id="share-btn"><i class="fa-sharp fa-thin fa-share"></i></button>
+             <button class="btn-secondary" id="share-btn" aria-label="Share"><i class="fa-sharp fa-thin fa-share"></i></button>
             </div>
             <p><i class="fa-sharp fa-thin fa-star"></i> ${product.rating}</p>
         </div>
