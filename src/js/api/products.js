@@ -10,7 +10,7 @@ export async function getProducts() {
         return data;
 
     } catch (error) {
-        console.error("Failed to fetch products", error)
+        throw error;
     }
 }
 
@@ -26,6 +26,6 @@ export async function getProduct(id) {
         return data;
 
     } catch (error) {
-        console.error("Failed to fetch products", error)
+        throw error;
     }
 }

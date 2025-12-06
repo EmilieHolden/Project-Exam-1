@@ -18,7 +18,6 @@ export async function loginUser(userData) {
 
         return data;
     } catch (error) {
-        console.error("Login failed:", error.message);
         throw error;
     }
 }

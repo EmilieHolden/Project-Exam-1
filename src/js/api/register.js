@@ -18,7 +18,6 @@ export async function registerUser(userData) {
         return data;
 
     } catch (error) {
-        console.error("Registration failed:", error.message);
         throw error;
     }
 }

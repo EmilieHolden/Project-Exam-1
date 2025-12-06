@@ -136,7 +136,7 @@ async function copyShareLink(text) {
     }, 1500);
 
   } catch (error) {
-    console.error(error.message);
+    throw error;
   }
 }
 

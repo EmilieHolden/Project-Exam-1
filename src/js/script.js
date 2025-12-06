@@ -55,7 +55,6 @@ export async function fetchAndCreateProducts() {
 
         })
     } catch (error) {
-        console.error("Failed to fetch and create products", error)
         container.textContent = 'Failed to load products'
     } finally {
         loading = false
