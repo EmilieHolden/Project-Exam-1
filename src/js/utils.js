@@ -16,6 +16,18 @@ export function groupById(cartArray) {
     return grouped;
 }
 
+export function updateCartCount() {
+    const counter = document.querySelector(".cart-count");
+    if (!counter) return;
+
+    const cart = JSON.parse(localStorage.getItem("cartList")) || [];
+    const count = cart.length;
+
+    counter.textContent = count;
+    counter.hidden = count === 0;
+}
+
+
 export function validateForm(form) {
     let valid = true;
 

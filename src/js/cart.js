@@ -1,4 +1,5 @@
 import { groupById } from "./utils.js"
+import { updateCartCount } from "./utils.js";
 
 
 
@@ -106,6 +107,7 @@ export function updateCart() {
     const pageCart = document.querySelector(".cart-list-page")
     const pageTotal = document.querySelector(".total-page")
     renderCart(pageCart, pageTotal)
+    updateCartCount();
 
 }
 
