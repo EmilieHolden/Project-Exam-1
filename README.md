@@ -23,4 +23,4 @@ Follow these steps to get a copy of the project running locally:
 
 Emilie Grefstad Holden - e.393@hotmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/EmilieHolden/Project-Exam-1)
+Project Link: https://github.com/EmilieHolden/Project-Exam-1
